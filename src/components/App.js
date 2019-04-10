@@ -2,6 +2,7 @@ import React from "react";
 
 import "../styles/App.css";
 
+import ProductDetails from "./ProductDetails";
 import ProductImage from "./ProductImage";
 import Votes from "./Votes";
 
@@ -14,6 +15,7 @@ const App = () => {
             <div className="main">
                 <ProductImage />
                 <Votes />
+                <ProductDetails />
             </div>
         </div>
     )
