@@ -1,9 +1,13 @@
 import React from "react";
+import "../styles/App.css";
 
 const App = () => {
     return (
-        <div>
-            <h1>PRODUCT VOTING APP</h1>
+        <div className="container">
+            <div className="header">
+                <h1>Product Listing</h1>
+            </div>
+            <div className="main"></div>
         </div>
     )
 }
