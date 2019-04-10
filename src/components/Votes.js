@@ -4,7 +4,7 @@ const Votes = () => {
     return (
         <div className="votesContainer">
             <p><i className="fa fa-caret-up upVote" aria-hidden="true"></i></p>
-            <p>12</p>
+            <p className="voteCount">12</p>
         </div>
     );
 }
