@@ -40,7 +40,23 @@ body {
 }
 
 .productDetailsContainer {
-    flex-grow: 2;
+    flex-grow       : 2;
+    padding         : 5px 10px 5px 10px;
+    background-color: #f9d131;
+}
+
+.productTitle {
+    border-bottom: 1px solid black;
+}
+
+.productTitle p {
+    font-weight: 700;
+    font-size  : 22px;
+}
+
+.productDescription p {
+    font-size : 16px;
+    font-style: italic;
 }
 
 .upVote {
@@ -49,8 +65,8 @@ body {
 }
 
 .voteCount {
-    border          : 1px solid #f9d131;
     border-radius   : 50%;
-    background-color: #f9d131;
+    background-color: #1458e0;
+    color           : #ffffff;
     padding         : 5px;
 }
