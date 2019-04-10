@@ -7,5 +7,8 @@ module.exports = {
         path      : path.resolve(__dirname, "/build"),
         publicPath: "/",
         filename  : "bundle.js"
+    },
+    devServer: {
+        contentBase: "./build"
     }
 }
