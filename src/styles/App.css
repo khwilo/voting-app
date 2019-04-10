@@ -42,3 +42,8 @@ body {
 .productDetailsContainer {
     flex-grow: 2;
 }
+
+.upVote {
+    font-size: 40px;
+    cursor   : pointer;
+}
