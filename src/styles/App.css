@@ -25,10 +25,6 @@ body {
     padding-bottom: 10px;
 }
 
-.productImage, .votesContainer, .productDetailsContainer {
-    border: 1px solid black;
-}
-
 .votesContainer {
     margin         : 0px 5px 0px 5px;
     width          : 60px;
