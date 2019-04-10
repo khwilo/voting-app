@@ -1,7 +1,8 @@
-# node modules
+# dependencies
+/node_modules
 
-node_modules/
+#production
+/build
 
 # vs code files
-
 .vscode/
