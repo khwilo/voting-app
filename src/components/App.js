@@ -1,5 +1,8 @@
 import React from "react";
+
 import "../styles/App.css";
+
+import ProductImage from "./ProductImage";
 
 const App = () => {
     return (
@@ -7,7 +10,9 @@ const App = () => {
             <div className="header">
                 <h1>Product Listing</h1>
             </div>
-            <div className="main"></div>
+            <div className="main">
+                <ProductImage />
+            </div>
         </div>
     )
 }
