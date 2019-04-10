@@ -19,5 +19,10 @@ module.exports = {
                 use    : "babel-loader"
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.resolve("./public/index.html")
+        })
+    ]
 }
