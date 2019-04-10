@@ -19,7 +19,22 @@ body {
 }
 
 .main {
-    margin-top     : 10px;
-    display        : flex;
-    justify-content: space-between;
+    margin-top    : 10px;
+    display       : flex;
+    flex-wrap     : wrap;
+    padding-bottom: 10px;
+}
+
+.productImage, .votesContainer, .productDetailsContainer {
+    border: 1px solid black;
+}
+
+.votesContainer {
+    margin    : 0px 5px 0px 5px;
+    width     : 60px;
+    text-align: center;
+}
+
+.productDetailsContainer {
+    flex-grow: 2;
 }
