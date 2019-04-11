@@ -62,9 +62,10 @@ body {
 }
 
 .voteCount {
-    border-radius   : 50%;
+    border-radius   : 0%;
     background-color: #1458e0;
     color           : #ffffff;
+    font-weight     : 600;
     padding         : 5px;
 }
 
@@ -76,7 +77,6 @@ body {
 }
 
 .avatar {
-    border : 1px solid black;
     display: flex;
 }
 
