@@ -39,6 +39,7 @@ body {
     flex-grow       : 2;
     padding         : 5px 10px 5px 10px;
     background-color: #f9d131;
+    line-height     : 2ch;
 }
 
 .productTitle {
