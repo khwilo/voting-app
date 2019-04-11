@@ -1,4 +1,5 @@
 import React from 'react';
+import Avatar from './Avatar';
 
 const ProductDetails = () => {
     return (
@@ -9,6 +10,7 @@ const ProductDetails = () => {
             <div className="productDescription">
                 <p>Body of product description</p>
             </div>
+            <Avatar />
         </div>
     );
 }
