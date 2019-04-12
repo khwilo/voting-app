@@ -1,12 +1,24 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Votes = ({ voteCount }) => {
-    return (
-        <div className="votesContainer">
-            <p><i className="fa fa-caret-up upVote" aria-hidden="true"></i></p>
-            <p className="voteCount">{voteCount}</p>
-        </div>
-    );
+class Votes extends Component {
+    render() {
+        const { voteCount, onUpVote, product } = this.props;
+        return (
+            <div className="votesContainer">
+                <p>
+                    <i
+                        onClick     = {() => onUpVote(product)}
+                        className   = "fa fa-caret-up upVote"
+                        aria-hidden = "true"
+                    >
+                    </i>
+                </p>
+                <p className="voteCount">
+                    {voteCount}
+                </p>
+            </div>
+        );
+    }
 }
 
 export default Votes;
