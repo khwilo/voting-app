@@ -4,10 +4,10 @@ import "../styles/App.css";
 
 import Product from './Product';
 
-const App = () => {
+const ProductList = () => {
     return (
         <Product />
     )
 }
 
-export default App;
+export default ProductList;
