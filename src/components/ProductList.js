@@ -11,11 +11,19 @@ class ProductList extends Component {
         products: data
     };
 
+    handleUpVote = product => {
+        const products = [...this.state.products];
+        const index    = products.indexOf(product);
+        products[index].voteCount++;
+        this.setState({ products: products });
+    }
+
     render() {
         const productComponents = this.state.products.map((product) => (
             <Product
-                key     = {'product-' + product.id}
-                product = {product}
+                key      = {'product-' + product.id}
+                product  = {product}
+                onUpVote = {this.handleUpVote}
             />
         ));
 
