@@ -6,15 +6,10 @@ import Votes from './Votes';
 
 const Product = () => {
     return (
-        <div className="container">
-            <div className="header">
-                <h1>Product Listing</h1>
-            </div>
-            <div className="main">
-                <ProductImage />
-                <Votes />
-                <ProductDetails />
-            </div>
+        <div className="main">
+            <ProductImage />
+            <Votes />
+            <ProductDetails />
         </div>
     );
 }
