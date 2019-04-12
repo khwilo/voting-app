@@ -7,8 +7,12 @@ import data from "../data";
 import Product from './Product';
 
 class ProductList extends Component {
+    state = {
+        products: data
+    };
+
     render() {
-        const productComponents = data.map((product) => (
+        const productComponents = this.state.products.map((product) => (
             <Product
                 key     = {'product-' + product.id}
                 product = {product}
