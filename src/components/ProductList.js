@@ -19,7 +19,11 @@ class ProductList extends Component {
     }
 
     render() {
-        const productComponents = this.state.products.map((product) => (
+        const products          = this.state.products.sort((a, b) => (
+            b.voteCount - a.voteCount
+        ));
+
+        const productComponents = products.map((product) => (
             <Product
                 key      = {'product-' + product.id}
                 product  = {product}
