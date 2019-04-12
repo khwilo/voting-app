@@ -7,7 +7,16 @@ import Product from './Product';
 class ProductList extends Component {
     render() {
         return (
-            <Product />
+            <div className="container">
+                <div className="header">
+                    <h1>Product Listing</h1>
+                </div>
+                <div className="product">
+                    <Product />
+                    <Product />
+                    <Product />
+                </div>
+            </div>
         );
     }
 }
