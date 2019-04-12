@@ -8,7 +8,12 @@ import Product from './Product';
 
 class ProductList extends Component {
     render() {
-        const product = data[0];
+        const productComponents = data.map((product) => (
+            <Product
+                key     = {'product-' + product.id}
+                product = {product}
+            />
+        ));
 
         return (
             <div className="container">
@@ -16,7 +21,7 @@ class ProductList extends Component {
                     <h1>Product Listing</h1>
                 </div>
                 <div className="product">
-                    <Product product={product} />
+                    {productComponents}
                 </div>
             </div>
         );
