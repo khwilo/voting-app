@@ -1,7 +1,7 @@
 import React from 'react';
 
-const ProductImage = () => {
-    const imageUrl = "https://picsum.photos/150/150/?random";
+const ProductImage = ({ productImageUrl }) => {
+    const imageUrl = productImageUrl;
     return (
         <div className="productImage">
             <img

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Avatar = () => {
-    const url = "https://api.adorable.io/avatars/50/abott@adorable.png";
+const Avatar = ({ avatarUrl }) => {
+    const url = avatarUrl;
     return (
         <div className="avatar">
             <p>Submitted by: </p>
