@@ -4,7 +4,7 @@ const products = [
         title          : "Cardbox",
         description    : "Contact re-imagined as a social network",
         avatarUrl      : "https://ui-avatars.com/api/?name=Khwilo+Kabaka",
-        productImageUrl: "https://picsum.photos/150/150/?random",
+        productImageUrl: "https://picsum.photos/150/150?image=1076",
         voteCount      : 0
     },
     {
@@ -12,7 +12,7 @@ const products = [
         title          : "Emoji clipboard",
         description    : "Click and copy the perfect emoji for any situation",
         avatarUrl      : "https://ui-avatars.com/api/?name=John+Doe",
-        productImageUrl: "https://picsum.photos/150/150/?random",
+        productImageUrl: "https://picsum.photos/150/150/?image=0",
         voteCount      : 0
     },
     {
@@ -20,7 +20,7 @@ const products = [
         title          : "Taskeo",
         description    : "Productivity assistant for you and your team",
         avatarUrl      : "https://ui-avatars.com/api/?name=Noel+Munyuma",
-        productImageUrl: "https://picsum.photos/150/150/?random",
+        productImageUrl: "https://picsum.photos/150/150/?image=1073",
         voteCount      : 0
     },
     {
@@ -28,7 +28,7 @@ const products = [
         title          : "Revere Alerts",
         description    : "New way to monitor data and set alerts, code-free",
         avatarUrl      : "https://ui-avatars.com/api/?name=Kyla+Imali",
-        productImageUrl: "https://picsum.photos/150/150/?random",
+        productImageUrl: "https://picsum.photos/150/150/?image=687",
         voteCount      : 0
     }
 ]
