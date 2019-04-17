@@ -6,7 +6,7 @@ import Votes from './Votes';
 
 class Product extends Component {
     render() {
-        const { product, onUpVote }                                          = this.props;
+        const { product, onVote }                                            = this.props;
         const { title, description, avatarUrl, productImageUrl,  voteCount } = product;
 
         return (
@@ -14,7 +14,7 @@ class Product extends Component {
                 <ProductImage productImageUrl={productImageUrl} />
                 <Votes
                     voteCount = {voteCount}
-                    onUpVote  = {onUpVote}
+                    onVote    = {onVote}
                     product   = {product}
                 />
                 <ProductDetails

@@ -2,13 +2,21 @@ import React, { Component } from "react";
 
 class Votes extends Component {
     render() {
-        const { voteCount, onUpVote, product } = this.props;
+        const { voteCount, onVote, product } = this.props;
         return (
             <div className="votesContainer">
                 <p>
                     <i
-                        onClick     = {() => onUpVote(product)}
+                        onClick     = {() => onVote(product, "upvote")}
                         className   = "fa fa-caret-up upVote"
+                        aria-hidden = "true"
+                    >
+                    </i>
+                </p>
+                <p>
+                    <i
+                        onClick     = {() => onVote(product, "downvote")}
+                        className   = "fa fa-caret-down upVote"
                         aria-hidden = "true"
                     >
                     </i>
