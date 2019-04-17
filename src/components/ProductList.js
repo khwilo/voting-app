@@ -8,8 +8,12 @@ import Product from './Product';
 
 class ProductList extends Component {
     state = {
-        products: data
+        products: []
     };
+
+    componentDidMount() {
+        this.setState({ products: data });
+    }
 
     handleUpVote = product => {
         const products = [...this.state.products];
@@ -19,7 +23,7 @@ class ProductList extends Component {
     }
 
     render() {
-        const products          = this.state.products.sort((a, b) => (
+        const products = this.state.products.sort((a, b) => (
             b.voteCount - a.voteCount
         ));
 
