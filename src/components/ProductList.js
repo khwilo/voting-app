@@ -15,10 +15,16 @@ class ProductList extends Component {
         this.setState({ products: data });
     }
 
-    handleUpVote = product => {
+    handleVote = (product, voteType) => {
         const products = [...this.state.products];
         const index    = products.indexOf(product);
-        products[index].voteCount++;
+        if (voteType == "upvote") {
+            products[index].voteCount++;
+        } else if (voteType == "downvote") {
+            products[index].voteCount--;
+        } else {
+            console.log("Vote type can either be an upvote or downvote!");
+        }
         this.setState({ products: products });
     }
 
@@ -29,9 +35,9 @@ class ProductList extends Component {
 
         const productComponents = products.map((product) => (
             <Product
-                key      = {'product-' + product.id}
-                product  = {product}
-                onUpVote = {this.handleUpVote}
+                key     = {'product-' + product.id}
+                product = {product}
+                onVote  = {this.handleVote}
             />
         ));
 
