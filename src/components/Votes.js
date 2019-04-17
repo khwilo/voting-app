@@ -16,7 +16,7 @@ class Votes extends Component {
                 <p>
                     <i
                         onClick     = {() => onVote(product, "downvote")}
-                        className   = "fa fa-caret-down upVote"
+                        className   = "fa fa-caret-down downVote"
                         aria-hidden = "true"
                     >
                     </i>
