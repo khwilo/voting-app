@@ -26,13 +26,10 @@ body {
 }
 
 .votesContainer {
-    margin         : 0px 5px 0px 5px;
-    width          : 60px;
-    display        : flex;
-    flex-direction : column;
-    align-items    : center;
-    justify-content: center;
-    padding        : 5px;
+    text-align: center;
+    display   : inline-block;
+    margin    : 0px 5px 0px 5px;
+    width     : 80px;
 }
 
 .productDetailsContainer {
@@ -56,17 +53,18 @@ body {
     font-style: italic;
 }
 
-.upVote {
+.upVote, .downVote {
     font-size: 40px;
     cursor   : pointer;
 }
 
 .voteCount {
-    border-radius   : 0%;
     background-color: #1458e0;
     color           : #ffffff;
     font-weight     : 600;
     padding         : 5px;
+    text-align      : center;
+    display         : inline-block;
 }
 
 .userImg {
