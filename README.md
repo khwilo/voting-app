@@ -10,3 +10,32 @@ A product voting app implemented in REACT. One can up-vote on products which are
 ![Alt_Text](https://github.com/khwilo/voting-app/blob/master/public/images/voting-app-demo.gif)  
 To visit the website location click [here](https://product-voting-app.netlify.com/?_ga=2.113297863.1947100418.1554899542-1805851601.1554899542).
 
+## Instructions to run the application locally
+
+**PREREQUISITE** - Node.js should be present in your development environment.
+
+To install the application locally:
+
+1. Clone the repository from the terminal using the command:
+
+```bash
+$ git clone https://github.com/khwilo/voting-app.git
+```
+
+2. Change the directory to the location where you cloned the repository:
+
+```bash
+$ cd voting-app
+```
+
+3. Install the application packages from the terminal using the command:
+
+```bash
+$ npm install
+```
+
+4. Run the application by executing this command from the terminal:
+
+```bash
+$ npm start
+```
